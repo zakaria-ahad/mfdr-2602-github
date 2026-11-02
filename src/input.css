@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@layer base{
+  body{
+    @apply font-poppins;
+  }
+  p{
+    @apply text-[#121212] font-raleway leading-[150%];
+  }
+  h1,h2,h3,h4,h5,h6{
+    @apply font-bold font-lato;
+  }
+  h2{
+    @apply text-[36px] text-primary font-black;
+  }
+  h3{
+    @apply text-xl text-primary font-black;
+  }
+}
+
+@theme {
+  --font-lato: "Lato", sans-serif; 
+  --font-poppins: "Poppins", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+
+  --color-primary: #285A43;
+  --color-paragraph: #121212; 
+  --color-F8F8F8: #F8F8F8;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 75rem;
+}
+
+.card-shadow{
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.02);
+}
